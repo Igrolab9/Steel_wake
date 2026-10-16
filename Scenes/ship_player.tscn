@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://n8b06pggxgnm"]
+
+[ext_resource type="Script" uid="uid://cxkwon7mrftta" path="res://Scripts/Player/ship_player.gd" id="1_flv8b"]
+[ext_resource type="Texture2D" uid="uid://ds2ah4ci1rdtl" path="res://Pictures/Ships/ship_medium_body_b.png" id="1_o07y2"]
+[ext_resource type="Texture2D" uid="uid://oej02vxipxs7" path="res://Pictures/Water_ripple/water_ripple_medium_000.png" id="2_5fpbc"]
+[ext_resource type="Texture2D" uid="uid://coju5l4vca2uw" path="res://Pictures/Water_ripple/water_ripple_medium_001.png" id="3_knm5i"]
+[ext_resource type="Texture2D" uid="uid://b0c8qk2aocfti" path="res://Pictures/Water_ripple/water_ripple_medium_002.png" id="4_flv8b"]
+[ext_resource type="Texture2D" uid="uid://dcl0fu2grui77" path="res://Pictures/Water_ripple/water_ripple_medium_003.png" id="5_1lom5"]
+[ext_resource type="Texture2D" uid="uid://c5dqtm6oketdb" path="res://Pictures/Water_ripple/water_ripple_medium_004.png" id="6_fl4vr"]
+[ext_resource type="Script" uid="uid://dgghv4pow6ybf" path="res://Scenes/player_water_ripple_anim.gd" id="7_knm5i"]
+[ext_resource type="Texture2D" uid="uid://ksfrraqsbprf" path="res://Pictures/Guns/ship_big_gun.png" id="9_1lom5"]
+[ext_resource type="AudioStream" uid="uid://p3xq1uj1kfv5" path="res://Sounds/deafening-gunshot-sound.mp3" id="10_fl4vr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2vnqp"]
+atlas = ExtResource("2_5fpbc")
+region = Rect2(0, 0, 84, 224)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6h5mb"]
+atlas = ExtResource("3_knm5i")
+region = Rect2(0, 0, 84, 224)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i2nug"]
+atlas = ExtResource("4_flv8b")
+region = Rect2(0, 0, 84, 224)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2spiu"]
+atlas = ExtResource("5_1lom5")
+region = Rect2(0, 0, 84, 224)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_syyu8"]
+atlas = ExtResource("6_fl4vr")
+region = Rect2(0, 0, 84, 224)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xrivr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2vnqp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6h5mb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i2nug")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2spiu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_syyu8")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
+size = Vector2(38, 170)
+
+[sub_resource type="AudioStreamPlaylist" id="AudioStreamPlaylist_njqwk"]
+loop = false
+stream_count = 1
+stream_0 = ExtResource("10_fl4vr")
+
+[node name="Ship_player" type="CharacterBody2D" unique_id=2120229996]
+script = ExtResource("1_flv8b")
+
+[node name="ShipMediumBodyB" type="Sprite2D" parent="." unique_id=1649970041]
+texture = ExtResource("1_o07y2")
+
+[node name="Player_water_ripple_anim" type="AnimatedSprite2D" parent="." unique_id=645206555]
+sprite_frames = SubResource("SpriteFrames_xrivr")
+frame_progress = 0.14970505
+script = ExtResource("7_knm5i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=100449055]
+shape = SubResource("RectangleShape2D_xrivr")
+
+[node name="Ship_gun" type="Node2D" parent="." unique_id=1537350915]
+position = Vector2(0, -99)
+
+[node name="Sprite2D" type="Sprite2D" parent="Ship_gun" unique_id=1243269592]
+position = Vector2(0, 44)
+rotation = 3.1415927
+texture = ExtResource("9_1lom5")
+
+[node name="Marker2D" type="Marker2D" parent="Ship_gun" unique_id=111424160]
+position = Vector2(0, -14)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1874903350]
+stream = SubResource("AudioStreamPlaylist_njqwk")

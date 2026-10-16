@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://bcqmvjxqm201p"]
+
+[ext_resource type="Texture2D" uid="uid://c5q0g3hgmsrpe" path="res://Pictures/Ships/ship_small_b_body.png" id="1_17i58"]
+[ext_resource type="Script" uid="uid://dqr3xc8k3hw14" path="res://Scripts/enemy_ship_small.gd" id="1_irl27"]
+[ext_resource type="Texture2D" uid="uid://ksfrraqsbprf" path="res://Pictures/Guns/ship_big_gun.png" id="2_5q1ro"]
+[ext_resource type="Texture2D" uid="uid://cst2t325vo45j" path="res://Pictures/Water_ripple/water_ripple_small_000.png" id="3_u1dfn"]
+[ext_resource type="Texture2D" uid="uid://iwf7srm0mhuq" path="res://Pictures/Water_ripple/water_ripple_small_001.png" id="4_xbebu"]
+[ext_resource type="Texture2D" uid="uid://dao5ra8j6rmqk" path="res://Pictures/Water_ripple/water_ripple_small_002.png" id="5_irl27"]
+[ext_resource type="Texture2D" uid="uid://bw0wri77rmdl6" path="res://Pictures/Water_ripple/water_ripple_small_003.png" id="6_qqlla"]
+[ext_resource type="Texture2D" uid="uid://boqb21oc2mjgu" path="res://Pictures/Water_ripple/water_ripple_small_004.png" id="7_ed1jt"]
+[ext_resource type="Script" uid="uid://d1iftgkkat6pi" path="res://Scripts/enemy_small_water_anim.gd" id="8_xbebu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
+size = Vector2(45, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_10amh"]
+atlas = ExtResource("3_u1dfn")
+region = Rect2(0, 0, 64, 168)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vfeut"]
+atlas = ExtResource("4_xbebu")
+region = Rect2(0, 0, 64, 168)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_07d8o"]
+atlas = ExtResource("5_irl27")
+region = Rect2(0, 0, 64, 168)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xo2ya"]
+atlas = ExtResource("6_qqlla")
+region = Rect2(0, 0, 64, 168)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rtb5w"]
+atlas = ExtResource("7_ed1jt")
+region = Rect2(0, 0, 64, 168)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xrivr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_10amh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vfeut")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_07d8o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xo2ya")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rtb5w")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Enemy_ship_small" type="CharacterBody2D" unique_id=1690724309]
+rotation = 3.1415927
+script = ExtResource("1_irl27")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=28509969]
+texture = ExtResource("1_17i58")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=410973948]
+visible = false
+position = Vector2(-0.5, 0.5)
+shape = SubResource("RectangleShape2D_xrivr")
+
+[node name="Ship_gun" type="Node2D" parent="." unique_id=1542666457]
+position = Vector2(0, -23)
+
+[node name="Sprite2D" type="Sprite2D" parent="Ship_gun" unique_id=1384542627]
+rotation = 3.1415927
+texture = ExtResource("2_5q1ro")
+
+[node name="Marker2D" type="Marker2D" parent="Ship_gun" unique_id=1692749362]
+position = Vector2(0, -37)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=180559957]
+sprite_frames = SubResource("SpriteFrames_xrivr")
+script = ExtResource("8_xbebu")

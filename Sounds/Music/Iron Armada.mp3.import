@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c3fma1biwf8ik"
+path="res://.godot/imported/Iron Armada.mp3-0a8c572b64e61990e1b809c921d5c014.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Music/Iron Armada.mp3"
+dest_files=["res://.godot/imported/Iron Armada.mp3-0a8c572b64e61990e1b809c921d5c014.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

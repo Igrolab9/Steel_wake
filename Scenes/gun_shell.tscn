@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cfunbsow4q2pm"]
+
+[ext_resource type="Texture2D" uid="uid://f71gu8rsc0b3" path="res://Pictures/Guns/Gun_shell.png" id="1_2gkfn"]
+[ext_resource type="Script" uid="uid://h2nanhtkaxbk" path="res://Scripts/Ship_gun/gun_shell.gd" id="1_hp588"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
+size = Vector2(8, 18)
+
+[node name="Gun_shell" type="Area2D" unique_id=1632437120]
+script = ExtResource("1_hp588")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1909513919]
+texture = ExtResource("1_2gkfn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1050682402]
+shape = SubResource("RectangleShape2D_xrivr")

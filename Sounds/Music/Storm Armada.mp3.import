@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ctsovn4ido3hd"
+path="res://.godot/imported/Storm Armada.mp3-57851c6f36a58d4bb17a26cf9cf006cb.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Music/Storm Armada.mp3"
+dest_files=["res://.godot/imported/Storm Armada.mp3-57851c6f36a58d4bb17a26cf9cf006cb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://b1wbsh1on80tm"]
+
+[ext_resource type="PackedScene" uid="uid://b66hdvb8h35ok" path="res://Scenes/sea.tscn" id="1_jjgbg"]
+[ext_resource type="PackedScene" uid="uid://n8b06pggxgnm" path="res://Scenes/ship_player.tscn" id="2_bo1nx"]
+[ext_resource type="PackedScene" uid="uid://dca42fpphlp8h" path="res://Scenes/enemy_spawner.tscn" id="3_8gbba"]
+[ext_resource type="AudioStream" uid="uid://d1htotru83wtq" path="res://Sounds/Music/Iron Tide.mp3" id="4_jjvhh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
+size = Vector2(299, 1582)
+
+[sub_resource type="AudioStreamPlaylist" id="AudioStreamPlaylist_xrivr"]
+stream_count = 1
+stream_0 = ExtResource("4_jjvhh")
+
+[node name="Main" type="Node2D" unique_id=760500109]
+
+[node name="Sea" parent="." unique_id=2051338462 instance=ExtResource("1_jjgbg")]
+
+[node name="Enemy_spawner" parent="." unique_id=1935692624 instance=ExtResource("3_8gbba")]
+position = Vector2(532, 551)
+
+[node name="Ship_player" parent="." unique_id=2120229996 instance=ExtResource("2_bo1nx")]
+position = Vector2(540, 1330)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1296911217]
+position = Vector2(540, 960)
+
+[node name="Wall1" type="StaticBody2D" parent="." unique_id=384955700]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall1" unique_id=1300239973]
+position = Vector2(127, 782)
+shape = SubResource("RectangleShape2D_xrivr")
+
+[node name="Wall2" type="StaticBody2D" parent="." unique_id=1949350412]
+position = Vector2(826, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall2" unique_id=1442924338]
+position = Vector2(127, 782)
+shape = SubResource("RectangleShape2D_xrivr")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1540192267]
+stream = SubResource("AudioStreamPlaylist_xrivr")
+autoplay = true

@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://b66hdvb8h35ok"]
+
+[ext_resource type="Shader" uid="uid://dg4nsosfehj0b" path="res://Scripts/sea.gdshader" id="1_6yv5d"]
+[ext_resource type="Texture2D" uid="uid://bjvsxe8rtkbie" path="res://Pictures/Sea/water1.png" id="1_ienxt"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ienxt"]
+shader = ExtResource("1_6yv5d")
+shader_parameter/scroll_speed = 80.0
+shader_parameter/wave_amplitude = 0.014000000665
+shader_parameter/wave_frequency = 0.0
+shader_parameter/wave_speed = 2.0
+shader_parameter/glint_intensity = 0.014000000665
+shader_parameter/glint_scale = 1.5350000729125
+shader_parameter/glint_speed = 0.6670000316825
+
+[node name="Sea" type="Node2D" unique_id=2051338462]
+
+[node name="Water1" type="Sprite2D" parent="." unique_id=71384660]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_ienxt")
+position = Vector2(539.5, 960.99994)
+scale = Vector2(2.1230469, 3.7656248)
+texture = ExtResource("1_ienxt")
