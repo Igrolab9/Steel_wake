@@ -5,7 +5,7 @@ extends Node
 const SHELL_SCENE := preload("res://Scenes/gun_shell.tscn")
 const POOL_SIZE := 50
 
-var _free_shells: Array[Area2D] = []  # стек свободных снарядов
+var _free_shells: Array[GunShell] = []  # стек свободных снарядов
 var _active_count: int = 0
 
 func _ready() -> void:
@@ -16,8 +16,8 @@ func _ready() -> void:
 		shell.visible = false
 		_free_shells.append(shell)
 
-func get_shell() -> Area2D:
-	var shell: Area2D
+func get_shell() -> GunShell:
+	var shell: GunShell
 
 	if not _free_shells.is_empty():
 		shell = _free_shells.pop_back()
@@ -34,7 +34,7 @@ func get_shell() -> Area2D:
 
 	return shell
 
-func return_shell(shell: Area2D) -> void:
+func return_shell(shell: GunShell) -> void:
 	if not is_instance_valid(shell):
 		return
 
@@ -49,8 +49,8 @@ func return_shell(shell: Area2D) -> void:
 func get_active_count() -> int:
 	return _active_count
 
-func _create_shell() -> Area2D:
-	var shell := SHELL_SCENE.instantiate() as Area2D
+func _create_shell() -> GunShell:
+	var shell := SHELL_SCENE.instantiate() as GunShell
 	add_child(shell)
 	# Внедрение зависимости: снаряд знает о пуле только через явную ссылку.
 	shell.set_pool(self)

@@ -1,3 +1,4 @@
+class_name GunShell
 extends Area2D
 
 const LIFETIME := 10.0
