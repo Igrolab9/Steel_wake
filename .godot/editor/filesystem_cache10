@@ -1,0 +1,58 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1792168491
+icon.svg::CompressedTexture2D::2514554354022604729::1791622737::1791622744::1::::<><><>0<>0<>2856032141171ab7a8cfe8aefeee45d7<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://Pictures/::1792168307
+::res://Pictures/Guns/::1792168307
+Gun_shell.png::CompressedTexture2D::418594765137544626::1791624728::1791624728::1::::<><><>0<>0<>4b9a334870f4b64e410a41703cd05ed8<>res://.godot/imported/Gun_shell.png-d0e938ee3caff70b2e4e3b96b66d5723.ctex::
+ship_big_gun.png::CompressedTexture2D::739382073061645867::1791624457::1791624457::1::::<><><>0<>0<>7ff6816ac6320cb8987f9899bfefea24<>res://.godot/imported/ship_big_gun.png-51ed51f03e997e3484bbe8d724794543.ctex::
+::res://Pictures/Sea/::1792168307
+water1.png::CompressedTexture2D::3062606450270390136::1791622887::1791622888::1::::<><><>0<>0<>90b041707ba5be447b22cce9ce42e6d6<>res://.godot/imported/water1.png-4cac6f1acf7f30976d9615203760e68b.ctex::
+::res://Pictures/Ships/::1792168307
+ship_medium_body_b.png::CompressedTexture2D::8478413463146497733::1791623034::1791623035::1::::<><><>0<>0<>2f60fd4a4c118f708596d602005bad03<>res://.godot/imported/ship_medium_body_b.png-82dfe8fc5657d21678710a3995af3cf4.ctex::
+ship_small_b_body.png::CompressedTexture2D::6913066841931532182::1791633021::1791633054::1::::<><><>0<>0<>f48124860a885ad58a35e2363b285d42<>res://.godot/imported/ship_small_b_body.png-4a4006fd1e0f37f4c8884a9dcced8386.ctex::
+::res://Pictures/Water_ripple/::1792168307
+water_ripple_big_000.png::CompressedTexture2D::7066062723365856341::1791623116::1791623117::1::::<><><>0<>0<>397e8400f371cd223c91571caee9fe7f<>res://.godot/imported/water_ripple_big_000.png-c9030d562797ce41f64b16f99dcbd9c2.ctex::
+water_ripple_big_001.png::CompressedTexture2D::3037015443364647544::1791623116::1791623117::1::::<><><>0<>0<>f392119765bb0682302ec662631f2ce8<>res://.godot/imported/water_ripple_big_001.png-bc46f5ed82be423e18f1a3e83373bf91.ctex::
+water_ripple_big_002.png::CompressedTexture2D::1652302603494629242::1791623116::1791623117::1::::<><><>0<>0<>82b0c4f069d75eab8b1556b6628b9802<>res://.godot/imported/water_ripple_big_002.png-2bb98e78f3211947cad6d959f9d25b4d.ctex::
+water_ripple_big_003.png::CompressedTexture2D::1490669993783864127::1791623116::1791623117::1::::<><><>0<>0<>6c11588702e4eb354dee475b38a9a2de<>res://.godot/imported/water_ripple_big_003.png-97c67ddae4fca744aac04cc7081b6c08.ctex::
+water_ripple_big_004.png::CompressedTexture2D::2658042111027515673::1791623116::1791623117::1::::<><><>0<>0<>58f382bbb6907e7c8d8ef7197cc3c367<>res://.godot/imported/water_ripple_big_004.png-d7e5da37ca398fe7a07e77a1e6f665f4.ctex::
+water_ripple_medium_000.png::CompressedTexture2D::991493871358881912::1791623116::1791623117::1::::<><><>0<>0<>4d4a18e1102c46efe1d44171ab8f396e<>res://.godot/imported/water_ripple_medium_000.png-38d7e0e00fedec31767bdbfae0183408.ctex::
+water_ripple_medium_001.png::CompressedTexture2D::5775333115290697770::1791623116::1791623117::1::::<><><>0<>0<>0bec563de5f1293a81794b4f0ced6c07<>res://.godot/imported/water_ripple_medium_001.png-6627fe1ac4bce1f8c5c5ee2b42026ac5.ctex::
+water_ripple_medium_002.png::CompressedTexture2D::4147303330577816274::1791623116::1791623117::1::::<><><>0<>0<>1c0e336c61371978c28461dcff34c902<>res://.godot/imported/water_ripple_medium_002.png-a761a46fd3c735152338609418d5e99a.ctex::
+water_ripple_medium_003.png::CompressedTexture2D::7323875839911560368::1791623116::1791623117::1::::<><><>0<>0<>d9c0fc838a5d08c8513c76f7746d0b07<>res://.godot/imported/water_ripple_medium_003.png-daf2614acfaab6840a13594489b12ede.ctex::
+water_ripple_medium_004.png::CompressedTexture2D::6885705890576586611::1791623116::1791623117::1::::<><><>0<>0<>219d2426c420bd3f7c4b30823bdd75fe<>res://.godot/imported/water_ripple_medium_004.png-f99da1f5e8f62d1d5d9fb6b0bbedccac.ctex::
+water_ripple_small_000.png::CompressedTexture2D::6077138532842042169::1791623116::1791623117::1::::<><><>0<>0<>f6bedffb943cbc70d87da61c3b76318e<>res://.godot/imported/water_ripple_small_000.png-74fd8b41c1ca024b24fff47a6b5aca96.ctex::
+water_ripple_small_001.png::CompressedTexture2D::607288762323454724::1791623116::1791623117::1::::<><><>0<>0<>54cf58157f4d6cea9f0dc7640b523c97<>res://.godot/imported/water_ripple_small_001.png-b0267aa81dfed49d608cb05796ee63b9.ctex::
+water_ripple_small_002.png::CompressedTexture2D::7190015259345090738::1791623116::1791623117::1::::<><><>0<>0<>cb36064319cb0408727b82cf49e61113<>res://.godot/imported/water_ripple_small_002.png-a942158873bcac21854524e448175b65.ctex::
+water_ripple_small_003.png::CompressedTexture2D::3983551291016222609::1791623116::1791623117::1::::<><><>0<>0<>64f71c13b4c67487e2149618211faa9c<>res://.godot/imported/water_ripple_small_003.png-ecd1f452294c61b91068512cff07723a.ctex::
+water_ripple_small_004.png::CompressedTexture2D::3402204859480509268::1791623116::1791623117::1::::<><><>0<>0<>ae88fa2a5eeef59eadc671a943b5f226<>res://.godot/imported/water_ripple_small_004.png-2514d607dece75df64841de7c3dee893.ctex::
+::res://Scenes/::1792168307
+enemy_ship_small.tscn::PackedScene::2560595029604069311::1791702576::0::1::::<><><>0<>0<><>::uid://c5q0g3hgmsrpe::::res://Pictures/Ships/ship_small_b_body.png<>uid://dqr3xc8k3hw14::::res://Scripts/enemy_ship_small.gd<>uid://ksfrraqsbprf::::res://Pictures/Guns/ship_big_gun.png<>uid://cst2t325vo45j::::res://Pictures/Water_ripple/water_ripple_small_000.png<>uid://iwf7srm0mhuq::::res://Pictures/Water_ripple/water_ripple_small_001.png<>uid://dao5ra8j6rmqk::::res://Pictures/Water_ripple/water_ripple_small_002.png<>uid://bw0wri77rmdl6::::res://Pictures/Water_ripple/water_ripple_small_003.png<>uid://boqb21oc2mjgu::::res://Pictures/Water_ripple/water_ripple_small_004.png<>uid://d1iftgkkat6pi::::res://Scripts/enemy_small_water_anim.gd
+enemy_spawner.tscn::PackedScene::7301449034061181069::1791698364::0::1::::<><><>0<>0<><>::uid://bylrn57c8mqsk::::res://Scripts/enemy_spawner.gd<>uid://bcqmvjxqm201p::::res://Scenes/enemy_ship_small.tscn
+gun_shell.tscn::PackedScene::5165865215443986566::1791631583::0::1::::<><><>0<>0<><>::uid://f71gu8rsc0b3::::res://Pictures/Guns/Gun_shell.png<>uid://h2nanhtkaxbk::::res://Scripts/Ship_gun/gun_shell.gd
+main.tscn::PackedScene::4256840198637473422::1791736684::0::1::::<><><>0<>0<><>::uid://b66hdvb8h35ok::::res://Scenes/sea.tscn<>uid://n8b06pggxgnm::::res://Scenes/ship_player.tscn<>uid://dca42fpphlp8h::::res://Scenes/enemy_spawner.tscn<>uid://d1htotru83wtq::::res://Sounds/Music/Iron Tide.mp3
+player_water_ripple_anim.gd::GDScript::7593245447069186143::1791623583::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
+sea.tscn::PackedScene::4626702029224054414::1791685946::0::1::::<><><>0<>0<><>::uid://dg4nsosfehj0b::::res://Scripts/sea.gdshader<>uid://bjvsxe8rtkbie::::res://Pictures/Sea/water1.png
+ship_player.tscn::PackedScene::980686446696245110::1791702503::0::1::::<><><>0<>0<><>::uid://cxkwon7mrftta::::res://Scripts/Player/ship_player.gd<>uid://ds2ah4ci1rdtl::::res://Pictures/Ships/ship_medium_body_b.png<>uid://oej02vxipxs7::::res://Pictures/Water_ripple/water_ripple_medium_000.png<>uid://coju5l4vca2uw::::res://Pictures/Water_ripple/water_ripple_medium_001.png<>uid://b0c8qk2aocfti::::res://Pictures/Water_ripple/water_ripple_medium_002.png<>uid://dcl0fu2grui77::::res://Pictures/Water_ripple/water_ripple_medium_003.png<>uid://c5dqtm6oketdb::::res://Pictures/Water_ripple/water_ripple_medium_004.png<>uid://dgghv4pow6ybf::::res://Scenes/player_water_ripple_anim.gd<>uid://ksfrraqsbprf::::res://Pictures/Guns/ship_big_gun.png<>uid://p3xq1uj1kfv5::::res://Sounds/deafening-gunshot-sound.mp3
+::res://Scripts/::1792168307
+enemy_ship_small.gd::GDScript::8319119276681430241::1791698842::0::1::::<>CharacterBody2D<><>0<>0<><>::
+enemy_small_water_anim.gd::GDScript::9001024853791931098::1791633316::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
+enemy_spawner.gd::GDScript::4094718115768035678::1791700381::0::1::::<>Node2D<><>0<>0<><>::
+health_component.gd::GDScript::9054524496921589135::1791694618::0::1::::HealthComponent<>RefCounted<><>0<>0<><>::
+sea.gdshader::Shader::7641084296337673487::1791735965::0::1::::<><><>0<>0<><>::
+::res://Scripts/Player/::1792168307
+player_movement.gd::GDScript::8863565342831116992::1791629964::0::1::::PlayerMovement<>RefCounted<><>0<>0<><>::
+ship_player.gd::GDScript::6409190056362530570::1791702374::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://Scripts/Ship_gun/::1792168307
+gun_controller.gd::GDScript::3048617363550762560::1791689934::0::1::::GunController<>RefCounted<><>0<>0<><>::
+gun_shell.gd::GDScript::547850120225650504::1791701249::0::1::::<>Area2D<><>0<>0<><>::
+shell_pool.gd::GDScript::6910996173592576773::1791701219::0::1::::<>Node<><>0<>0<><>::
+::res://Sounds/::1792168307
+deafening-gunshot-sound.mp3::AudioStreamMP3::1112061692167521676::1791702021::1791702022::1::::<><><>0<>0<>4953cb7ed7ae4f8775cabd366eeaf375<>res://.godot/imported/deafening-gunshot-sound.mp3-3d6fc4bde315bc15115c8d90ae9a2c03.mp3str::
+::res://Sounds/Music/::1792168307
+Iron Armada.mp3::AudioStreamMP3::6749180849479631206::1791699569::1791699570::1::::<><><>0<>0<>1ed7dd7d9324fd740e4d56730b7a5986<>res://.godot/imported/Iron Armada.mp3-0a8c572b64e61990e1b809c921d5c014.mp3str::
+Iron Tide (1).mp3::AudioStreamMP3::7452481304422902226::1791699569::1791699570::1::::<><><>0<>0<>b6289ab2abed622d96a6e05359ce573c<>res://.godot/imported/Iron Tide (1).mp3-dc8e51cf55f6e6f868c0954265c4dc29.mp3str::
+Iron Tide.mp3::AudioStreamMP3::8999802279083056926::1791699569::1791699570::1::::<><><>0<>0<>8257d1aaa3b05556b8a0143d82a1704f<>res://.godot/imported/Iron Tide.mp3-d63ad8efd5ae20375f7ee3ee06cf2954.mp3str::
+Maelstrom.mp3::AudioStreamMP3::8796257966328308629::1791699569::1791699570::1::::<><><>0<>0<>c6a4ea0ff9432225454b792658b8f248<>res://.godot/imported/Maelstrom.mp3-357b854b05fa4e76c577469a118fdcea.mp3str::
+Storm Armada.mp3::AudioStreamMP3::6144476463623581889::1791699569::1791699570::1::::<><><>0<>0<>f470da012f4c926c5259a0eb21ebb880<>res://.godot/imported/Storm Armada.mp3-57851c6f36a58d4bb17a26cf9cf006cb.mp3str::
+Tides of War.mp3::AudioStreamMP3::373548597674674897::1791699569::1791699570::1::::<><><>0<>0<>0e96fabc2fc3aa98dbd52e32806d4e5f<>res://.godot/imported/Tides of War.mp3-7ad15f41e02723d3f28bcbabdacbc1be.mp3str::
