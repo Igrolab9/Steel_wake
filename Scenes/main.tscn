@@ -3,6 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://b66hdvb8h35ok" path="res://Scenes/sea.tscn" id="1_jjgbg"]
 [ext_resource type="PackedScene" uid="uid://n8b06pggxgnm" path="res://Scenes/ship_player.tscn" id="2_bo1nx"]
 [ext_resource type="PackedScene" uid="uid://dca42fpphlp8h" path="res://Scenes/enemy_spawner.tscn" id="3_8gbba"]
+[ext_resource type="Script" uid="uid://54pm894o1syha" path="res://Scripts/main.gd" id="5_main"]
+[ext_resource type="Script" uid="uid://c5p0dkpdi2d1n" path="res://Scripts/Ship_gun/shell_pool.gd" id="6_pool"]
 [ext_resource type="AudioStream" uid="uid://d1htotru83wtq" path="res://Sounds/Music/Iron Tide.mp3" id="4_jjvhh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
@@ -13,14 +15,23 @@ stream_count = 1
 stream_0 = ExtResource("4_jjvhh")
 
 [node name="Main" type="Node2D" unique_id=760500109]
+script = ExtResource("5_main")
 
 [node name="Sea" parent="." unique_id=2051338462 instance=ExtResource("1_jjgbg")]
 
 [node name="Enemy_spawner" parent="." unique_id=1935692624 instance=ExtResource("3_8gbba")]
 position = Vector2(532, 551)
+shell_pool_path = NodePath("../ShellPool")
+
+[node name="SpawnMarker" type="Marker2D" parent="Enemy_spawner"]
+position = Vector2(0, -531)
+
+[node name="ShellPool" type="Node" parent="."]
+script = ExtResource("6_pool")
 
 [node name="Ship_player" parent="." unique_id=2120229996 instance=ExtResource("2_bo1nx")]
 position = Vector2(540, 1330)
+shell_pool_path = NodePath("../ShellPool")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1296911217]
 position = Vector2(540, 960)

@@ -14,10 +14,6 @@ config/name="Steel_Wake"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
-[autoload]
-
-ShellPool="*uid://c5p0dkpdi2d1n"
-
 [display]
 
 window/size/viewport_width=540

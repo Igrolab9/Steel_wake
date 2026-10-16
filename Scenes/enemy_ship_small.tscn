@@ -59,6 +59,9 @@ animations = [{
 [node name="Enemy_ship_small" type="CharacterBody2D" unique_id=1690724309]
 rotation = 3.1415927
 script = ExtResource("1_irl27")
+move_speed = 75.0
+max_health = 1.0
+gun_barrel_path = NodePath("Ship_gun/Marker2D")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=28509969]
 texture = ExtResource("1_17i58")

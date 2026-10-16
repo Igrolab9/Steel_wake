@@ -1,45 +1,57 @@
 extends Node
+## Пул снарядов. Больше НЕ autoload-синглтон: создаётся в сцене (см. main.gd),
+## а ссылка внедряется в GunController и в каждый снаряд через set_pool().
 
 const SHELL_SCENE := preload("res://Scenes/gun_shell.tscn")
 const POOL_SIZE := 50
 
-var _pool: Array[Area2D] = []
-var _active_shells: Array[Area2D] = []
+var _free_shells: Array[Area2D] = []  # стек свободных снарядов
+var _active_count: int = 0
 
 func _ready() -> void:
 	for i in POOL_SIZE:
-		var shell := SHELL_SCENE.instantiate() as Area2D
+		var shell := _create_shell()
 		shell.set_process(false)
 		shell.set_physics_process(false)
 		shell.visible = false
-		add_child(shell)
-		_pool.append(shell)
+		_free_shells.append(shell)
 
 func get_shell() -> Area2D:
 	var shell: Area2D
-	
-	if _pool.size() > 0:
-		shell = _pool.pop_back()
+
+	if not _free_shells.is_empty():
+		shell = _free_shells.pop_back()
 	else:
 		push_warning("ShellPool exhausted! Creating new shell dynamically.")
-		shell = SHELL_SCENE.instantiate() as Area2D
-		add_child(shell)
-	
+		shell = _create_shell()
+
+	# Явный публичный контракт сброса состояния снаряда
+	shell.reset_state()
 	shell.set_process(true)
 	shell.set_physics_process(true)
 	shell.visible = true
-	shell._lifetime = 0.0  # <-- ДОБАВИТЬ: сброс времени жизни
-	shell._can_collide = false  # <-- ДОБАВИТЬ: сброс флага коллизии
-	_active_shells.append(shell)
-	
+	_active_count += 1
+
 	return shell
 
 func return_shell(shell: Area2D) -> void:
+	if not is_instance_valid(shell):
+		return
+
 	shell.set_process(false)
 	shell.set_physics_process(false)
 	shell.visible = false
-	shell.velocity = Vector2.ZERO
-	shell.monitoring = false  # <-- ДОБАВИТЬ эту строку!
-	
-	_active_shells.erase(shell)
-	_pool.append(shell)
+	shell.reset_state()
+
+	_active_count -= 1
+	_free_shells.append(shell)
+
+func get_active_count() -> int:
+	return _active_count
+
+func _create_shell() -> Area2D:
+	var shell := SHELL_SCENE.instantiate() as Area2D
+	add_child(shell)
+	# Внедрение зависимости: снаряд знает о пуле только через явную ссылку.
+	shell.set_pool(self)
+	return shell

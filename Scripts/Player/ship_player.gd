@@ -6,12 +6,18 @@ var _movement: PlayerMovement
 var _gun: GunController
 var _health: HealthComponent # <-- Новый компонент
 
+## Путь к узлу пула снарядов (ShellPool в main.tscn) — внедряется извне, без глобального синглтона.
+@export var shell_pool_path: NodePath = ^"../ShellPool"
+
 @onready var _gun_barrel: Marker2D = $Ship_gun/Marker2D
 @onready var _gunshot_sound : AudioStreamPlayer = $AudioStreamPlayer
 
 func _ready() -> void:
 	_movement = PlayerMovement.new(self)
-	_gun = GunController.new(_gun_barrel)
+	var shell_pool := get_node_or_null(shell_pool_path)
+	if shell_pool == null:
+		push_error("Ship_player: пул снарядов не найден по пути '%s'." % shell_pool_path)
+	_gun = GunController.new(_gun_barrel, shell_pool)
 	
 	# Инициализируем здоровье (например, 100 единиц)
 	_health = HealthComponent.new(self, _player_health)
